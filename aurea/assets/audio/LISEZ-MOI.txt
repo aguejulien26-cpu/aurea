@@ -1,0 +1,19 @@
+Ce dossier doit contenir 2 fichiers audio fournis par le promoteur :
+
+1. post-inscription.mp3
+   Message diffusé juste après l'inscription, avant la validation email.
+   Texte indicatif (cahier des charges) : "Veuillez vous diriger vers
+   l'email que vous avez reçu."
+
+2. post-paiement.mp3
+   Message diffusé juste après un paiement réussi.
+   Texte indicatif (cahier des charges) : "Merci et félicitations pour
+   le paiement, vous allez être dirigé vers la page confort dans
+   quelques minutes."
+
+Format recommandé : MP3, voix claire, durée courte (5-10 secondes),
+volume normalisé pour ne pas surprendre l'utilisateur.
+
+Tant que ces fichiers ne sont pas fournis, assets/js/audio-messages.js
+échouera silencieusement (try/catch déjà en place) sans bloquer la
+navigation de l'utilisateur.
